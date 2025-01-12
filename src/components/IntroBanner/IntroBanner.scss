@@ -1,0 +1,58 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.banner {
+    padding: 15rem 2.5rem;
+    
+    @include tablet {
+        padding: 15rem 4rem;
+    }
+
+    @include desktop {
+        padding: 15rem 8rem;
+    }
+}
+
+.text {
+    color: $primary-portfolio-PaleAqua;
+    font-size: 1rem;
+}
+
+.name {
+    font-size: 4rem;
+    animation: colorChange 5s infinite alternate ease-in-out;
+    padding-bottom: 1rem;
+}
+
+@keyframes colorChange {
+    0% {
+      color: $primary-portfolio-MidnightTeal;
+    }
+    20% {
+      color: darken($secondary-portfolio-DeepAqua, 10%);
+    }
+    40% {
+      color: lighten($primary-portfolio-AquaMint, 15%);
+    }
+    60% {
+      color: $secondary-portfolio-DeepAqua;
+    }
+    80% {
+      color: lighten($primary-portfolio-PaleAqua, 10%);
+    }
+    100% {
+      color: $primary-portfolio-AquaMint;
+    }
+  }
+
+.titles {
+    color: $primary-portfolio-PaleAqua;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.button__hire {
+    background-color: $primary-portfolio-AquaMint;
+    border-radius: 0.5rem;
+    width: 6.3rem;
+}

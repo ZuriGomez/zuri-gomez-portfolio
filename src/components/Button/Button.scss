@@ -1,0 +1,18 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: $primary-portfolio-MidnightTeal;
+    border: 2px solid $primary-portfolio-AquaMint;
+    color: $primary-portfolio-AquaMint;
+    position: relative;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: translate(-0.2rem, -0.2rem);
+  }

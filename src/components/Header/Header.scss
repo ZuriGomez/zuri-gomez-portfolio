@@ -1,0 +1,108 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: rgba(9, 51, 63, 0.8); // Midnight teal with transparency
+  backdrop-filter: blur(5px); // Blurry effect
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.header--hidden {
+  transform: translateY(-100%);
+}
+
+.header__logo-image {
+  max-height: 5.5rem;
+}
+
+.header__menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__menu-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.header__wrapper {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  background-color: rgba(9, 51, 63, 0.95); // Adjust for dropdown styling
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @include tablet {
+    display: flex;
+    justify-content: flex-end; // Align to the right side
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row; // Reset to horizontal layout
+    background-color: transparent; // Remove background color
+    padding: 0; // Remove padding
+    border-radius: 0; // Remove border radius
+    box-shadow: none; // Remove shadow
+    position: relative; // Reset position to flow inline
+    top: auto; // Reset top
+    right: auto; // Reset right
+  }
+}
+
+.header__wrapper--open {
+  display: flex;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.header__nav-link {
+  text-decoration: none;
+}
+
+.header__resume {
+  background-color: $primary-portfolio-AquaMint;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+
+  @include tablet {
+    margin-right: 0rem;
+  }
+}
+
+.header__nav-number {
+  color: $primary-portfolio-AquaMint;
+}
+
+.header__nav-text {
+  color: $primary-portfolio-PaleAqua;
+}
