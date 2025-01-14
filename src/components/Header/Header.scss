@@ -44,7 +44,7 @@
   position: absolute;
   top: 65%;
   right: 0;
-  background-color: rgba(9, 51, 63, 0.95); // Adjust for dropdown styling
+  background-color: rgba(9, 51, 63, 0.95); 
   padding: 1rem;
   border-radius: 0.5rem;
   display: none;
@@ -54,17 +54,17 @@
 
   @include tablet {
     display: flex;
-    justify-content: flex-end; // Align to the right side
+    justify-content: flex-end; 
     align-items: center;
     gap: 2rem;
-    flex-direction: row; // Reset to horizontal layout
-    background-color: transparent; // Remove background color
-    padding: 0; // Remove padding
-    border-radius: 0; // Remove border radius
-    box-shadow: none; // Remove shadow
-    position: relative; // Reset position to flow inline
-    top: auto; // Reset top
-    right: auto; // Reset right
+    flex-direction: row; 
+    background-color: transparent; 
+    padding: 0; 
+    border-radius: 0; 
+    box-shadow: none; 
+    position: relative; 
+    top: auto; 
+    right: auto; 
   }
 }
 

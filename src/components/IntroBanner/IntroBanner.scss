@@ -2,20 +2,20 @@
 @use "../../styles/partials/variables" as *;
 
 .banner {
-    padding: 15rem 2.5rem;
-    
-    @include tablet {
-        padding: 15rem 4rem;
-    }
+  padding: 10rem 2.5rem;
 
-    @include desktop {
-        padding: 15rem 8rem;
-    }
+  @include tablet {
+    padding: 15rem 4rem;
+  }
+
+  @include desktop {
+    padding: 15rem 8rem;
+  }
 }
 
 .text {
-    color: $primary-portfolio-PaleAqua;
-    font-size: 1rem;
+  color: $primary-portfolio-PaleAqua;
+  font-size: 1rem;
 }
 
 .name {
@@ -45,14 +45,42 @@
     }
   }
 
+// .name {
+//   font-size: 4rem;
+//   font-weight: bold;
+//   background-image: linear-gradient(
+//     to right,
+//     $primary-portfolio-AquaMint,
+//     $primary-portfolio-PaleAqua,
+//     $secondary-portfolio-DeepAqua,
+//     $primary-portfolio-MidnightTeal
+//   );
+//   background-clip: text;
+//   -webkit-background-clip: text;
+//   color: transparent;
+//   animation: rainbow-colors 6s infinite linear;
+// }
+
+// @keyframes rainbow-colors {
+//   0% {
+//     background-position: 0% 50%;
+//   }
+//   50% {
+//     background-position: 100% 50%;
+//   }
+//   100% {
+//     background-position: 0% 50%;
+//   }
+// }
+
 .titles {
-    color: $primary-portfolio-PaleAqua;
-    padding-bottom: 2rem;
-    font-size: 1rem;
+  color: $primary-portfolio-PaleAqua;
+  padding-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .button__hire {
-    background-color: $primary-portfolio-AquaMint;
-    border-radius: 0.5rem;
-    width: 6.3rem;
+  background-color: $primary-portfolio-AquaMint;
+  border-radius: 0.5rem;
+  width: 6.3rem;
 }
