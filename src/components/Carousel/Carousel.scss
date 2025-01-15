@@ -1,0 +1,86 @@
+// @use "../../styles/partials/mixins" as *;
+// @use "../../styles/partials/variables" as *;
+
+// .carousel {
+//     position: relative;
+//     width: 100%;
+//     max-width: 600px;
+//     overflow: hidden;
+//     margin: auto;
+//   }
+
+//   .carousel__container {
+//     display: flex;
+//     transition: transform 0.5s ease;
+//   }
+
+//   .carousel__item {
+//     // min-width: calc(100% / 6);
+//     box-sizing: border-box;
+//   }
+
+//   .carousel__item img {
+//     width: 8rem;
+//     display: block;
+//   }
+
+//   .carousel__btn {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     background-color: rgba(0, 0, 0, 0.5);
+//     color: white;
+//     border: none;
+//     padding: 1rem;
+//     cursor: pointer;
+//   }
+
+//   .carousel__btn--prev {
+//     left: 0;
+//   }
+
+//   .carousel__btn--next {
+//     right: 0;
+//   }
+
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 3rem;
+}
+
+.carousel__container {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll 50s linear infinite;
+}
+
+.carousel__item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel__item img {
+  width: 8rem;
+  display: block;
+}
+
+.carousel__item img:hover {
+  transform: translate(-0.5rem, -0.5rem);
+  opacity: 1;
+  background-color: transparent;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

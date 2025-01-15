@@ -1,13 +1,14 @@
 import React from "react";
 import "../AboutSection/AboutSection.scss";
 import ProfilePic from "../../assets/images/profile.png";
+import Carousel from "../Carousel/Carousel.jsx";
 
 function AboutSection() {
   return (
     <section className="about section">
       <h1 className="about section__title">
-        <span className="header__nav-number">01.</span>{" "}
-        <span className="header__nav-text">About</span>
+        <span className="about section__title-number">01.</span>{" "}
+        <span className="about section__title-text">About</span>
       </h1>
       <div className="about section__intro">
         <p className="intro__text">
@@ -30,7 +31,10 @@ function AboutSection() {
           />
         </div>
       </div>
-      <h2 className="subtitle">These are some of the technologies I have worked with:</h2>
+      <h2 className="subtitle">
+        These are some of the technologies I have worked with:
+      </h2>
+      <Carousel />
     </section>
   );
 }
