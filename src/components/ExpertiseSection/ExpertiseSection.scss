@@ -1,0 +1,182 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.expertise-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  margin-top: 7rem;
+
+  @include tablet {
+    padding: 3rem 4rem;
+  }
+
+  @include desktop {
+    padding: 3rem 8rem;
+  }
+}
+
+.expertise-section__title {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+
+  @include tablet {
+    font-size: 2rem;
+  }
+}
+
+.expertise-section__title::after {
+  content: "";
+  display: inline-block;
+  width: 14rem;
+  height: 0.02rem;
+  background-color: $primary-portfolio-PaleAqua;
+  vertical-align: middle;
+  margin-left: 1rem;
+
+  @include tablet {
+    width: 18rem;
+  }
+}
+
+.expertise-section__title-number {
+  color: $primary-portfolio-AquaMint;
+}
+
+.expertise-section__title-text {
+  color: $primary-portfolio-PaleAqua;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  padding: 2rem;
+  border: 1px solid $primary-portfolio-PaleAqua;
+  border-radius: 0.5rem;
+}
+
+.section__wrapper-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section__wrapper-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.section__wrapper-title {
+  font-size: 2.5rem;
+  color: $primary-portfolio-PaleAqua;
+  position: relative;
+  display: inline-block;
+
+  span:first-child {
+    position: relative;
+    display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    bottom: 0;
+    background: $secondary-portfolio-DeepAqua;
+    z-index: -1;
+  }
+}
+}
+
+.section__text {
+  font-size: 1rem;
+  color: $primary-portfolio-PaleAqua;
+  line-height: 1.5rem;
+}
+
+.highlight {
+  color: $primary-portfolio-AquaMint;
+}
+
+.full-stack_section__main {
+  display: flex;
+}
+
+.full-stack_section__title {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  color: $primary-portfolio-MidnightTeal;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  background-color: $primary-portfolio-AquaMint;
+  text-align: center;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.full-stack_section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-stack_section__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid $primary-portfolio-PaleAqua;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.full-stack_section__wrapper-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.full-stack_section__wrapper-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.full-stack_section__wrapper-title {
+  font-size: 2.5rem;
+  color: $primary-portfolio-PaleAqua;
+  position: relative;
+  display: inline-block;
+
+  span:first-child {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1rem;
+      bottom: 0;
+      background: $secondary-portfolio-DeepAqua;
+      z-index: -1;
+    }
+  }
+}
+
+.full-stack_section__text {
+  font-size: 1rem;
+  color: $primary-portfolio-PaleAqua;
+  line-height: 1.5rem;
+}

@@ -3,6 +3,7 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import IntroBanner from "./components/IntroBanner/IntroBanner";
 import AboutSection from "./components/AboutSection/AboutSection";
+import ExpertiseSection from "./components/ExpertiseSection/ExpertiseSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <IntroBanner />
       <AboutSection />
+      <ExpertiseSection/>
     </>
   );
 }
