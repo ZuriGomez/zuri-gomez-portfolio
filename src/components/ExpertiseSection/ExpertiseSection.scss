@@ -49,6 +49,17 @@
   color: $primary-portfolio-PaleAqua;
 }
 
+// .container {
+//     display: flex;
+//     flex-direction: column;
+
+//     @include desktop {
+//         flex-direction: row;
+//         align-items: flex-start;
+//         justify-content: space-between;
+//     }
+// }
+
 .section__container {
   display: flex;
   flex-direction: column;
