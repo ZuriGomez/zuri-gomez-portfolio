@@ -11,6 +11,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolling(window.scrollY > 50);
+      setIsMenuOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);

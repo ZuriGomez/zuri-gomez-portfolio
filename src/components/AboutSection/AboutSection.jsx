@@ -5,7 +5,7 @@ import Carousel from "../Carousel/Carousel.jsx";
 
 function AboutSection() {
   return (
-    <section className="about section">
+    <section  id="about" className="about section">
       <h1 className="about section__title">
         <span className="about section__title-number">01.</span>{" "}
         <span className="about section__title-text">About</span>

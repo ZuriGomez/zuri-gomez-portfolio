@@ -7,7 +7,7 @@ import APIIcon from "../../assets/icons/api_icon.svg";
 
 function ExpertiseSection() {
   return (
-    <section className="expertise-section">
+    <section id="expertise" className="expertise-section">
       <h1 className="expertise-section__title">
         <span className="expertise-section__title-number">02.</span>{" "}
         <span className="expertise-section__title-text">My Expertise</span>
