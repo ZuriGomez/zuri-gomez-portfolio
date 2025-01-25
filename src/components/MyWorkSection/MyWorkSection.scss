@@ -1,0 +1,220 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  margin-top: 7rem;
+
+  @include tablet {
+    padding: 3rem 4rem;
+  }
+
+  @include desktop {
+    padding: 3rem 8rem;
+  }
+}
+
+.work-section__title {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+
+  @include tablet {
+    font-size: 2rem;
+  }
+}
+
+.work-section__title::after {
+  content: "";
+  display: inline-block;
+  width: 17rem;
+  height: 0.02rem;
+  background-color: $primary-portfolio-PaleAqua;
+  vertical-align: middle;
+  margin-left: 1rem;
+
+  @include tablet {
+    width: 18rem;
+  }
+}
+
+.work-section__title-number {
+  color: $primary-portfolio-AquaMint;
+}
+
+.work-section__title-text {
+  color: $primary-portfolio-PaleAqua;
+}
+
+.work-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablet {
+    align-items: flex-start;
+  }
+}
+
+.work-section__item {
+  display: flex;
+  flex-direction: column;
+
+  &-image {
+    position: relative;
+    top: 5rem;
+    right: -7rem;
+    height: 18rem;
+    border-radius: 0.5rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-color: rgba($primary-portfolio-AquaMint, 0.5);
+
+    @include tablet {
+      height: 35rem;
+      top: 6rem;
+      right: -30rem;
+    }
+
+    @include desktop {
+        top: 6rem;
+        right: -34rem;
+    }
+
+    &:after {
+      content: "";
+      width: 8rem;
+      height: 100%;
+      top: 0;
+      right: 9.5rem;
+      position: absolute;
+      background-color: $primary-portfolio-AquaMint;
+      filter: blur(20px);
+      z-index: -1;
+
+      @include tablet {
+        width: 16rem;
+      }
+
+      @include desktop {
+        top: 0;
+        right: 14.5rem;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $secondary-portfolio-DarkBlue;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 1rem 1rem;
+    z-index: -2;
+
+    @include tablet {
+      width: 35rem;
+      align-items: flex-start;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 0;
+      position: relative;
+      top: -20rem;
+      left:0;
+    }
+
+    @include desktop {
+        width: 45rem;
+        border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    &__subtitle {
+        color: $primary-portfolio-AquaMint;
+    }
+
+    &__title {
+      color: $secondary-portfolio-DarkAqua;
+      font-size: 2rem;
+      padding-bottom: 3rem;
+      padding-top: 0.5
+      rem;
+    }
+
+    &__text {
+      color: $primary-portfolio-PaleAqua;
+      font-size: 1rem;
+    }
+
+    &__tools {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      width: 20rem;
+      padding-top: 1rem;
+
+      @include tablet {
+        width: 30rem;
+      }
+
+      @include desktop {
+        width: 40rem;
+      }
+
+      &-tag {
+        background-color: $primary-portfolio-AquaMint;
+        opacity: 50%;
+        border-radius: 0.5rem;
+        padding: 0.2rem 0.5rem;
+      }
+    }
+  }
+}
+
+.work-section__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: $secondary-portfolio-DeepAqua;
+  opacity: 60%;
+  width: auto;
+  padding: 0.3rem 0.4rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  cursor: pointer;
+
+  @include tablet {
+    position: relative;
+    top: -20rem;
+    left:0;
+    padding: 0.3rem 1rem;
+  }
+
+  @include desktop {
+    position: relative;
+    top: -20rem;
+    padding: 0.3rem 1rem;
+  }
+
+  &:hover {
+    opacity: 1;
+    background-color: transparent;
+    border-bottom: 0.5px solid $secondary-portfolio-DeepAqua;
+    border-right: 0.5px solid $secondary-portfolio-DeepAqua;
+    border-left: 0.5px solid $secondary-portfolio-DeepAqua;
+  }
+
+  &-item {
+    width: 2rem;
+    height: 2rem;
+  }
+}

@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import IntroBanner from "./components/IntroBanner/IntroBanner";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ExpertiseSection from "./components/ExpertiseSection/ExpertiseSection";
+import MyWorkSection from "./components/MyWorkSection/MyWorkSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <IntroBanner />
       <AboutSection />
       <ExpertiseSection/>
+      <MyWorkSection/>
     </>
   );
 }
