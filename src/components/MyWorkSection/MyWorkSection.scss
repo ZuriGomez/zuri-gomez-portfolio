@@ -139,10 +139,14 @@
 
     &__subtitle {
         color: $primary-portfolio-AquaMint;
+        // background-color: $primary-portfolio-AquaMint;
+        // padding: 0.5rem;
+        // border-radius: 0.5rem;
+        // width: auto;
     }
 
     &__title {
-      color: $secondary-portfolio-DarkAqua;
+      color: $primary-portfolio-PaleAqua;
       font-size: 2rem;
       padding-bottom: 3rem;
       padding-top: 0.5
@@ -152,6 +156,7 @@
     &__text {
       color: $primary-portfolio-PaleAqua;
       font-size: 1rem;
+    
     }
 
     &__tools {
