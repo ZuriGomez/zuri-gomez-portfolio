@@ -7,7 +7,7 @@ import listing from "../../assets/images/listing.png";
 import newListing from "../../assets/images/new_listing.png";
 import sellerView from "../../assets/images/seller_view.png";
 import userProfile from "../../assets/images/user_profile.png";
-import GithubLogo from "../../assets/icons/github_green.png";
+import Arrow from "../../assets/icons/arrow.png"
 
 const images = [
   landingPage,
@@ -62,17 +62,17 @@ function MyWorkSection() {
             </div>
           </article>
         </div>
-        <div className="work-section__logos">
+        <div className="work-section__link">
           <a
             href="https://github.com/ZuriGomez/zuri-gomez-miplanta.git"
             target="_blank"
             rel="noopener noreferrer"
-            className="work-section__logos-item"
-          >
+            className="work-section__link-item"
+          > Go to the GitHub Repo
             <img
-              className="work-section__logos-item"
-              src={GithubLogo}
-              alt="GitHubLogo"
+              className="work-section__link-item-icon"
+              src={Arrow}
+              alt="Arrow"
             />
           </a>
         </div>

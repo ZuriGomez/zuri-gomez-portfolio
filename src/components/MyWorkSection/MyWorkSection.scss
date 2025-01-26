@@ -81,8 +81,8 @@
     }
 
     @include desktop {
-        top: 6rem;
-        right: -34rem;
+      top: 6rem;
+      right: -34rem;
     }
 
     &:after {
@@ -114,7 +114,6 @@
     background-color: $secondary-portfolio-DarkBlue;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
     padding: 1rem 1rem;
     z-index: -2;
 
@@ -127,36 +126,34 @@
       border-bottom-left-radius: 0;
       position: relative;
       top: -20rem;
-      left:0;
+      left: 0;
     }
 
     @include desktop {
-        width: 45rem;
-        border-top-left-radius: 2rem;
+      width: 45rem;
+      border-top-left-radius: 2rem;
       border-top-right-radius: 2rem;
       border-bottom-right-radius: 2rem;
     }
 
     &__subtitle {
-        color: $primary-portfolio-AquaMint;
-        // background-color: $primary-portfolio-AquaMint;
-        // padding: 0.5rem;
-        // border-radius: 0.5rem;
-        // width: auto;
+      color: $primary-portfolio-AquaMint;
+      // background-color: $primary-portfolio-AquaMint;
+      // padding: 0.5rem;
+      // border-radius: 0.5rem;
+      // width: auto;
     }
 
     &__title {
       color: $primary-portfolio-PaleAqua;
       font-size: 2rem;
       padding-bottom: 3rem;
-      padding-top: 0.5
-      rem;
+      padding-top: 0.5 rem;
     }
 
     &__text {
       color: $primary-portfolio-PaleAqua;
       font-size: 1rem;
-    
     }
 
     &__tools {
@@ -185,14 +182,12 @@
   }
 }
 
-.work-section__logos {
+.work-section__link {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  background-color: $secondary-portfolio-DeepAqua;
-  opacity: 60%;
-  width: auto;
-  padding: 0.3rem 0.4rem;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  border: 1px solid $secondary-portfolio-DarkBlue;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   cursor: pointer;
@@ -200,7 +195,7 @@
   @include tablet {
     position: relative;
     top: -20rem;
-    left:0;
+    left: 0;
     padding: 0.3rem 1rem;
   }
 
@@ -210,16 +205,22 @@
     padding: 0.3rem 1rem;
   }
 
-  &:hover {
-    opacity: 1;
-    background-color: transparent;
-    border-bottom: 0.5px solid $secondary-portfolio-DeepAqua;
-    border-right: 0.5px solid $secondary-portfolio-DeepAqua;
-    border-left: 0.5px solid $secondary-portfolio-DeepAqua;
+  &:hover, :active {
+    color: $primary-portfolio-MidnightTeal;
+    background-color: $secondary-portfolio-DeepAqua;
   }
 
   &-item {
-    width: 2rem;
-    height: 2rem;
+    text-decoration: none;
+    color: $primary-portfolio-AquaMint;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
