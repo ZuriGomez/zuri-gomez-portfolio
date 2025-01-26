@@ -6,13 +6,15 @@
     color: $primary-portfolio-PaleAqua;
     text-align: center;
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     position: relative;
     width: 100%;
     bottom: 0;
+    padding: 2rem;
+    margin-top: 4rem;
 
     @include tablet {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
   }
   

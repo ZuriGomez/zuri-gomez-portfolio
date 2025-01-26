@@ -84,6 +84,19 @@
   }
 }
 
+.header__nav-item {
+  &:hover {
+    transform: translate(-0.2rem, -0.2rem);
+    text-decoration: underline;
+    text-decoration-color: $primary-portfolio-AquaMint;
+    text-decoration-thickness: 4px;
+  } 
+
+  &:active {
+    transform: translate(0);
+  }
+}
+
 .header__nav-link {
   text-decoration: none;
 }
