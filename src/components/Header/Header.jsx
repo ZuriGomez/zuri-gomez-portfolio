@@ -24,10 +24,16 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const refreshPage = () => {
+    window.location.href = "/";
+  };
+
   return (
     <header className={`header ${isScrolling ? "header--hidden" : ""}`}>
       <div className="header__logo">
-        <img src={logo} alt="Logo" className="header__logo-image" />
+        <a href="/" onClick={refreshPage}>
+          <img src={logo} alt="Logo" className="header__logo-image" />
+        </a>
       </div>
       <button
         className="header__menu-button"
