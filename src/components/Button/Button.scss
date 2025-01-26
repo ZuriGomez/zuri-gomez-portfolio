@@ -2,7 +2,8 @@
 @use "../../styles/partials/variables" as *;
 
 .button {
-    padding: 0.5rem 1rem;
+  display: inline-block;  
+  padding: 0.5rem 1rem;
     font-size: 1rem;
     background: $primary-portfolio-MidnightTeal;
     border: 2px solid $primary-portfolio-AquaMint;
@@ -11,8 +12,14 @@
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  }
+    text-decoration: none;
   
-  .button:hover {
+  
+  &:hover {
     transform: translate(-0.2rem, -0.2rem);
   }
+
+  &:active {
+    transform: translate(0);
+  }
+}

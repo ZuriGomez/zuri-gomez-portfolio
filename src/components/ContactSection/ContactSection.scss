@@ -102,8 +102,12 @@
     border: 1px solid $primary-portfolio-AquaMint;
     border-radius: 0.5rem;
 
-    &:hover, :active {
+    &:hover {
       transform: translate(-0.3rem, -0.3rem);
+    }
+
+    &:active {
+      transform: translate(0);
     }
   }
 }

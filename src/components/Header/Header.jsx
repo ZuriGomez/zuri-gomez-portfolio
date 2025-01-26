@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/logos/logo.png";
-import menuIcon from "../../assets/icons/menu.png"
+import menuIcon from "../../assets/icons/menu.png";
 import Button from "../Button/Button";
 import "../Header/Header.scss";
 
@@ -29,7 +29,11 @@ function Header() {
       <div className="header__logo">
         <img src={logo} alt="Logo" className="header__logo-image" />
       </div>
-      <button className="header__menu-button" onClick={toggleMenu} aria-label="Toggle navigation menu">
+      <button
+        className="header__menu-button"
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+      >
         <img src={menuIcon} alt="Menu" className="header__menu-icon" />
       </button>
       <div
@@ -66,7 +70,11 @@ function Header() {
           </ul>
         </nav>
         <div className="header__resume">
-          <Button text="Resume" path="" />
+          <Button
+            text="Resume"
+            path="https://drive.google.com/file/d/1pH749r9vJIrmZKgMiSRgPo-YZiRM7XVA/view?usp=sharing"
+            isExternal={true}
+          />
         </div>
       </div>
     </header>
