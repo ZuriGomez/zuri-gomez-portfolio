@@ -19,6 +19,14 @@
   @include desktop {
     right: 7.5rem;
   }
+
+  &:hover {
+    transform: translate(-0.2rem, -0.2rem);
+  }
+
+  &:active {
+    transform: translate(0);
+  }
 }
 
 .scroll-to-top.visible {
