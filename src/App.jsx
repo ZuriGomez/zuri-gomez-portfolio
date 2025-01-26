@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import ExpertiseSection from "./components/ExpertiseSection/ExpertiseSection";
 import MyWorkSection from "./components/MyWorkSection/MyWorkSection";
 import ContactSection from "./components/ContactSection/ContactSection";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ExpertiseSection />
       <MyWorkSection />
       <ContactSection />
+      <ScrollToTopButton />
     </>
   );
 }
