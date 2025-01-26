@@ -74,6 +74,7 @@ function Header() {
             text="Resume"
             path="https://drive.google.com/file/d/1pH749r9vJIrmZKgMiSRgPo-YZiRM7XVA/view?usp=sharing"
             isExternal={true}
+            onClick={() => setIsMenuOpen(false)}
           />
         </div>
       </div>
