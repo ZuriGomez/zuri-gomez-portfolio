@@ -5,6 +5,7 @@ import IntroBanner from "./components/IntroBanner/IntroBanner";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ExpertiseSection from "./components/ExpertiseSection/ExpertiseSection";
 import MyWorkSection from "./components/MyWorkSection/MyWorkSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Header />
       <IntroBanner />
       <AboutSection />
-      <ExpertiseSection/>
-      <MyWorkSection/>
+      <ExpertiseSection />
+      <MyWorkSection />
+      <ContactSection />
     </>
   );
 }
