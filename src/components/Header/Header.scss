@@ -10,10 +10,11 @@
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background-color: rgba(9, 51, 63, 0.8); // Midnight teal with transparency
-  backdrop-filter: blur(5px); // Blurry effect
+  background-color: rgba(9, 51, 63, 0.8); 
+  backdrop-filter: blur(5px); 
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
+  overflow: hidden;
 }
 
 .header--hidden {
@@ -29,6 +30,10 @@
   border: none;
   cursor: pointer;
   display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  box-sizing: border-box;
 
   @include tablet {
     display: none;
