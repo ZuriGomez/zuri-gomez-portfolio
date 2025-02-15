@@ -86,7 +86,7 @@ function ExpertiseSection() {
                   and reliability.
                 </h3>
               </div>
-              <div className="expertise full-stack_section__wrapper">
+              <div className="expertise full-stack_section__wrapper_2">
                 <div className="expertise full-stack_section__wrapper-header">
                   <img
                     className="expertise full-stack_section__wrapper-icon"
