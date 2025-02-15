@@ -53,6 +53,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 5rem;
 
   @include tablet {
     align-items: flex-start;
@@ -84,26 +85,76 @@
       right: -34rem;
     }
 
-    // &:after {
-    //   content: "";
-    //   width: 8rem;
-    //   height: 100%;
-    //   top: 0;
-    //   right: 8rem;
-    //   position: absolute;
-    //   background-color: $primary-portfolio-AquaMint;
-    //   filter: blur(20px);
-    //   z-index: -1;
+    &:after {
+      @include tablet {
+        width: 16rem;
+        content: "";
+        height: 100%;
+        top: 0;
+        right: 9.5rem;
+        position: absolute;
+        background-color: $primary-portfolio-AquaMint;
+        filter: blur(20px);
+        z-index: -1;
+      }
 
-    //   @include tablet {
-    //     width: 16rem;
-    //   }
+      @include desktop {
+        top: 0;
+        right: 14.5rem;
+      }
+    }
+  }
 
-    //   @include desktop {
-    //     top: 0;
-    //     right: 14.5rem;
-    //   }
-    // }
+  &_wrapper {
+    background-color: $primary-portfolio-AquaMint;
+    width: fit-content;
+    border-radius: 0.5rem;
+    position: relative;
+    top: 0rem;
+    right: -8rem;
+    opacity: 60%;
+
+    &:hover {
+      opacity: 100%;
+    }
+
+    @include tablet {
+      top: -15rem;
+      right: -30rem;
+    }
+
+    @include desktop {
+      top: -14rem;
+      right: -39rem;
+    }
+
+    &:after {
+      @include tablet {
+        content: "";
+        top: 15rem;
+        right: 19rem;
+        position: absolute;
+        background-color: $primary-portfolio-AquaMint;
+        filter: blur(20px);
+        z-index: -1;
+      }
+
+      @include desktop {
+        top: 0;
+        right: 14.5rem;
+      }
+    }
+
+    &-img {
+      height: 15rem;
+      position: relative;
+      top: 0rem;
+      right: 0rem;
+
+      @include tablet {
+        height: 25rem;
+      }
+    }
   }
 
   &-info {
@@ -137,10 +188,6 @@
 
     &__subtitle {
       color: $primary-portfolio-AquaMint;
-      // background-color: $primary-portfolio-AquaMint;
-      // padding: 0.5rem;
-      // border-radius: 0.5rem;
-      // width: auto;
     }
 
     &__title {
@@ -186,6 +233,7 @@
   flex-direction: row;
   justify-content: center;
   padding: 1rem 0.5rem;
+  margin-bottom: 4rem;
   border: 1px solid $secondary-portfolio-DarkBlue;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -204,7 +252,8 @@
     padding: 0.3rem 1rem;
   }
 
-  &:hover, :active {
+  &:hover,
+  :active {
     color: $primary-portfolio-MidnightTeal;
     background-color: $secondary-portfolio-DeepAqua;
   }
@@ -220,6 +269,12 @@
     &-icon {
       width: 1.5rem;
       height: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+      
+      &:hover {
+        transform: translateX(10px); 
+      }
     }
   }
 }

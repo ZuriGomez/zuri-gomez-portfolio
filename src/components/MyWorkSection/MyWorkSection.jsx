@@ -7,7 +7,8 @@ import listing from "../../assets/images/listing.png";
 import newListing from "../../assets/images/new_listing.png";
 import sellerView from "../../assets/images/seller_view.png";
 import userProfile from "../../assets/images/user_profile.png";
-import Arrow from "../../assets/icons/arrow.png"
+import Arrow from "../../assets/icons/arrow.png";
+import PortfolioViews from "../../assets/images/portfolio_views.png";
 
 const images = [
   landingPage,
@@ -65,6 +66,39 @@ function MyWorkSection() {
         <div className="work-section__link">
           <a
             href="https://github.com/ZuriGomez/zuri-gomez-miplanta.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="work-section__link-item"
+          > Go to the GitHub Repo
+            <img
+              className="work-section__link-item-icon"
+              src={Arrow}
+              alt="Arrow"
+            />
+          </a>
+        </div>
+      </div>
+      <div className="work-section__container">
+        <div className="work-section__item">
+          <div className="work-section__item_wrapper"><img className="work-section__item_wrapper-img" src={PortfolioViews}/></div>
+          <article className="work-section__item-info">
+            <h3 className="work-section__item-info__subtitle">Featured</h3>
+            <h2 className="work-section__item-info__title">My Portfolio Website</h2>
+            <p className="work-section__item-info__text">
+            A minimalist and thoughtfully designed space where I showcase my work as a software engineer. I built this site to highlight the tools and technologies I’ve worked with, demonstrating my continuous growth and passion for development.
+            </p>
+            <div className="work-section__item-info__tools">
+              <p className="work-section__item-info__tools-tag">JavaScript</p>
+              <p className="work-section__item-info__tools-tag">HTML</p>
+              <p className="work-section__item-info__tools-tag">CSS</p>
+              <p className="work-section__item-info__tools-tag">Sass</p>
+              <p className="work-section__item-info__tools-tag">React</p>
+            </div>
+          </article>
+        </div>
+        <div className="work-section__link">
+          <a
+            href="https://github.com/ZuriGomez/zuri-gomez-portfolio.git"
             target="_blank"
             rel="noopener noreferrer"
             className="work-section__link-item"
