@@ -87,10 +87,14 @@
 }
 
 .section__wrapper-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: $primary-portfolio-PaleAqua;
   position: relative;
   display: inline-block;
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
 
   span:first-child {
     position: relative;
@@ -179,10 +183,14 @@
 }
 
 .full-stack_section__wrapper-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: $primary-portfolio-PaleAqua;
   position: relative;
   display: inline-block;
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
 
   span:first-child {
     position: relative;
