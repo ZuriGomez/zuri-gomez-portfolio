@@ -85,7 +85,7 @@ function MyWorkSection() {
             <h3 className="work-section__item-info__subtitle">Featured</h3>
             <h2 className="work-section__item-info__title">My Portfolio Website</h2>
             <p className="work-section__item-info__text">
-            A minimalist and thoughtfully designed space where I showcase my work as a software engineer. I built this site to highlight the tools and technologies I’ve worked with, demonstrating my continuous growth and passion for development.
+            A minimalist and thoughtfully designed space where I showcase some of my capabilities. I built this site to highlight the tools and technologies I’ve worked with, demonstrating my continuous growth and passion for development.
             </p>
             <div className="work-section__item-info__tools">
               <p className="work-section__item-info__tools-tag">JavaScript</p>
