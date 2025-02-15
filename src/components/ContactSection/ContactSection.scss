@@ -63,13 +63,17 @@
   }
 }
 .contact-section__email {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 4rem 0;
   color: $primary-portfolio-PaleAqua;
   position: relative;
   display: inline-block;
   text-decoration: none;
   text-align: center;
+
+  @include tablet {
+    font-size: 2rem;
+  }
 
   &::after {
     content: "";
