@@ -84,26 +84,26 @@
       right: -34rem;
     }
 
-    &:after {
-      content: "";
-      width: 8rem;
-      height: 100%;
-      top: 0;
-      right: 8rem;
-      position: absolute;
-      background-color: $primary-portfolio-AquaMint;
-      filter: blur(20px);
-      z-index: -1;
+    // &:after {
+    //   content: "";
+    //   width: 8rem;
+    //   height: 100%;
+    //   top: 0;
+    //   right: 8rem;
+    //   position: absolute;
+    //   background-color: $primary-portfolio-AquaMint;
+    //   filter: blur(20px);
+    //   z-index: -1;
 
-      @include tablet {
-        width: 16rem;
-      }
+    //   @include tablet {
+    //     width: 16rem;
+    //   }
 
-      @include desktop {
-        top: 0;
-        right: 14.5rem;
-      }
-    }
+    //   @include desktop {
+    //     top: 0;
+    //     right: 14.5rem;
+    //   }
+    // }
   }
 
   &-info {
