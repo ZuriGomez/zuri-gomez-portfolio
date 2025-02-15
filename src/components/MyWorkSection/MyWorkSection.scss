@@ -72,7 +72,6 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    // background-color: rgba($primary-portfolio-AquaMint, 0.5);
 
     @include tablet {
       height: 35rem;
@@ -90,7 +89,7 @@
       width: 8rem;
       height: 100%;
       top: 0;
-      right: 9.5rem;
+      right: 9.2rem;
       position: absolute;
       background-color: $primary-portfolio-AquaMint;
       filter: blur(20px);

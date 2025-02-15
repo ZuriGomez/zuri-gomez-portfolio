@@ -24,8 +24,8 @@ function MyWorkSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change the image every 3 seconds
-    return () => clearInterval(interval); // Cleanup the interval
+    }, 3000); 
+    return () => clearInterval(interval); 
   }, []);
 
   return (
