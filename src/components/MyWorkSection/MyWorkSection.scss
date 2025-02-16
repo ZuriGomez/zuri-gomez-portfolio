@@ -64,103 +64,11 @@
   display: flex;
   flex-direction: column;
 
-  &-image {
-    position: relative;
-    top: 5rem;
-    right: -5rem;
-    height: 18rem;
-    border-radius: 0.5rem;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    @include tablet {
-      height: 35rem;
-      top: 6rem;
-      right: -30rem;
-    }
-
-    @include desktop {
-      top: 6rem;
-      right: -34rem;
-    }
-
-    &:after {
-      @include tablet {
-        width: 16rem;
-        content: "";
-        height: 100%;
-        top: 0;
-        right: 9.5rem;
-        position: absolute;
-        background-color: $primary-portfolio-AquaMint;
-        filter: blur(20px);
-        z-index: -1;
-      }
-
-      @include desktop {
-        top: 0;
-        right: 14.5rem;
-      }
-    }
-  }
-
-  &_wrapper {
-    background-color: $primary-portfolio-AquaMint;
-    width: fit-content;
-    border-radius: 0.5rem;
-    position: relative;
-    top: 1rem;
-    right: -8rem;
-    opacity: 60%;
-
-    &:hover {
-      opacity: 100%;
-    }
-
-    @include tablet {
-      top: -15rem;
-      right: -30rem;
-    }
-
-    @include desktop {
-      top: -14rem;
-      right: -39rem;
-    }
-
-    &:after {
-      @include tablet {
-        content: "";
-        top: 15rem;
-        right: 19rem;
-        position: absolute;
-        background-color: $primary-portfolio-AquaMint;
-        filter: blur(20px);
-        z-index: -1;
-      }
-
-      @include desktop {
-        top: 0;
-        right: 14.5rem;
-      }
-    }
-
-    &-img {
-      height: 12rem;
-      position: relative;
-      top: 0rem;
-      right: 0rem;
-
-      @include tablet {
-        height: 25rem;
-      }
-    }
-  }
-
   &-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: left;
     background-color: $secondary-portfolio-DarkBlue;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -168,19 +76,14 @@
     z-index: -2;
 
     @include tablet {
-      width: 35rem;
       align-items: flex-start;
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem;
       border-bottom-right-radius: 1rem;
       border-bottom-left-radius: 0;
-      position: relative;
-      top: -20rem;
-      left: 0;
     }
 
     @include desktop {
-      width: 45rem;
       border-top-left-radius: 2rem;
       border-top-right-radius: 2rem;
       border-bottom-right-radius: 2rem;
@@ -197,32 +100,102 @@
       padding-top: 0.5 rem;
     }
 
-    &__text {
-      color: $primary-portfolio-PaleAqua;
-      font-size: 1rem;
-    }
-
-    &__tools {
+    &-block {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      width: 20rem;
-      padding-top: 1rem;
+      flex-direction: column;
+      justify-content: center;
 
       @include tablet {
-        width: 30rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:2rem;
+      }
+    }
+
+    &__image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      order: 1;
+      height: 18rem;
+      width: 100%;
+
+      @include tablet {
+        order: 2;
       }
 
-      @include desktop {
-        width: 40rem;
+      &-uno {
+        object-fit: contain;
+        height: 18rem;
+
+        @include tablet {
+          height: 20rem;
+        }
+
+        // &:after {
+        //   @include tablet {
+        //     content: "";
+        //     height: 18rem;
+        // top: 0;
+        // right: 9.5rem;
+        // position: absolute;
+        //     background-color: $primary-portfolio-AquaMint;
+        //     filter: blur(20px);
+        //     z-index: -1;
+        //   }
+
+        //   @include desktop {
+        //     top: 0;
+        //     right: 14.5rem;
+        //   }
+        // }
       }
 
-      &-tag {
+      &-dos {
+        height: 18rem;
         background-color: $primary-portfolio-AquaMint;
-        opacity: 50%;
         border-radius: 0.5rem;
-        padding: 0.2rem 0.5rem;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      order: 2;
+
+      @include tablet {
+        order: 1;
+      }
+
+      &__text {
+        color: $primary-portfolio-PaleAqua;
+        font-size: 1rem;
+      }
+
+      &__tools {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 20rem;
+        padding-top: 1rem;
+
+        @include tablet {
+          width: 30rem;
+        }
+
+        @include desktop {
+          width: 40rem;
+        }
+
+        &-tag {
+          background-color: $primary-portfolio-AquaMint;
+          opacity: 50%;
+          border-radius: 0.5rem;
+          padding: 0.2rem 0.5rem;
+        }
       }
     }
   }
@@ -240,15 +213,10 @@
   cursor: pointer;
 
   @include tablet {
-    position: relative;
-    top: -20rem;
-    left: 0;
     padding: 0.3rem 1rem;
   }
 
   @include desktop {
-    position: relative;
-    top: -20rem;
     padding: 0.3rem 1rem;
   }
 
@@ -271,9 +239,9 @@
       height: 1.5rem;
       transition: transform 0.3s ease-in-out;
       position: relative;
-      
+
       &:hover {
-        transform: translateX(10px); 
+        transform: translateX(10px);
       }
     }
   }

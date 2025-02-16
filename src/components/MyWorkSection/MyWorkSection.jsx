@@ -25,8 +25,8 @@ function MyWorkSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); 
-    return () => clearInterval(interval); 
+    }, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -37,29 +37,55 @@ function MyWorkSection() {
       </h1>
       <div className="work-section__container">
         <div className="work-section__item">
-          <div
-            className="work-section__item-image"
-            style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
-          ></div>
           <article className="work-section__item-info">
             <h3 className="work-section__item-info__subtitle">Featured</h3>
             <h2 className="work-section__item-info__title">miplanta</h2>
-            <p className="work-section__item-info__text">
-              miPlanta is a mobile-first marketplace designed to connect plant
-              enthusiasts and sellers. Users can browse and post listings for
-              plants, view detailed information about plants for sale, and
-              manage their profiles, including their own listings.
-            </p>
-            <div className="work-section__item-info__tools">
-              <p className="work-section__item-info__tools-tag">JavaScript</p>
-              <p className="work-section__item-info__tools-tag">HTML</p>
-              <p className="work-section__item-info__tools-tag">CSS</p>
-              <p className="work-section__item-info__tools-tag">Sass</p>
-              <p className="work-section__item-info__tools-tag">React</p>
-              <p className="work-section__item-info__tools-tag">Node.js</p>
-              <p className="work-section__item-info__tools-tag">Express.js</p>
-              <p className="work-section__item-info__tools-tag">MySQL</p>
-              <p className="work-section__item-info__tools-tag">Web API</p>
+            <div className="work-section__item-info-block">
+              <div className="work-section__item-info__image-container">
+                <img
+                  className="work-section__item-info__image-container-uno"
+                  src={images[currentImageIndex]}
+                  alt="ProjectScreenshot"
+                />
+              </div>
+              <div className="work-section__item-info-wrapper">
+                <p className="work-section__item-info-wrapper__text">
+                  miPlanta is a mobile-first marketplace designed to connect
+                  plant enthusiasts and sellers. Users can browse and post
+                  listings for plants, view detailed information about plants
+                  for sale, and manage their profiles, including their own
+                  listings.
+                </p>
+                <div className="work-section__item-info-wrapper__tools">
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    JavaScript
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    HTML
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    CSS
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    Sass
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    React
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    Node.js
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    Express.js
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    MySQL
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    Web API
+                  </p>
+                </div>
+              </div>
             </div>
           </article>
         </div>
@@ -69,7 +95,9 @@ function MyWorkSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="work-section__link-item"
-          > Go to the GitHub Repo
+          >
+            {" "}
+            Go to the GitHub Repo
             <img
               className="work-section__link-item-icon"
               src={Arrow}
@@ -80,19 +108,44 @@ function MyWorkSection() {
       </div>
       <div className="work-section__container">
         <div className="work-section__item">
-          <div className="work-section__item_wrapper"><img className="work-section__item_wrapper-img" src={PortfolioViews}/></div>
           <article className="work-section__item-info">
             <h3 className="work-section__item-info__subtitle">Featured</h3>
-            <h2 className="work-section__item-info__title">My Portfolio Website</h2>
-            <p className="work-section__item-info__text">
-            A minimalist and thoughtfully designed space where I showcase some of my capabilities. I built this site to highlight the tools and technologies I’ve worked with, demonstrating my continuous growth and passion for development.
-            </p>
-            <div className="work-section__item-info__tools">
-              <p className="work-section__item-info__tools-tag">JavaScript</p>
-              <p className="work-section__item-info__tools-tag">HTML</p>
-              <p className="work-section__item-info__tools-tag">CSS</p>
-              <p className="work-section__item-info__tools-tag">Sass</p>
-              <p className="work-section__item-info__tools-tag">React</p>
+            <h2 className="work-section__item-info__title">
+              My Portfolio Website
+            </h2>
+            <div className="work-section__item-info-block">
+              <div className="work-section__item-info__image-container">
+                <img
+                  className="work-section__item-info__image-container-dos"
+                  src={PortfolioViews}
+                  alt="PortfolioS Screenshot"
+                />
+              </div>
+              <div className="work-section__item-info-wrapper">
+                <p className="work-section__item-info-wrapper__text">
+                  A minimalist and thoughtfully designed space where I showcase
+                  some of my capabilities. I built this site to highlight the
+                  tools and technologies I’ve worked with, demonstrating my
+                  continuous growth and passion for development.
+                </p>
+                <div className="work-section__item-info-wrapper__tools">
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    JavaScript
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    HTML
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    CSS
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    Sass
+                  </p>
+                  <p className="work-section__item-info-wrapper__tools-tag">
+                    React
+                  </p>
+                </div>
+              </div>
             </div>
           </article>
         </div>
@@ -102,7 +155,9 @@ function MyWorkSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="work-section__link-item"
-          > Go to the GitHub Repo
+          >
+            {" "}
+            Go to the GitHub Repo
             <img
               className="work-section__link-item-icon"
               src={Arrow}
