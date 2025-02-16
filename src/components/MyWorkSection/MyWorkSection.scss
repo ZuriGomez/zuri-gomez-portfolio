@@ -109,7 +109,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap:2rem;
+        gap: 2rem;
       }
     }
 
@@ -121,6 +121,7 @@
       order: 1;
       height: 18rem;
       width: 100%;
+      cursor: pointer;
 
       @include tablet {
         order: 2;
@@ -154,9 +155,14 @@
       }
 
       &-dos {
+        object-fit: contain;
         height: 18rem;
         background-color: $primary-portfolio-AquaMint;
         border-radius: 0.5rem;
+
+        @include tablet {
+          height: 20rem;
+        }
       }
     }
 
