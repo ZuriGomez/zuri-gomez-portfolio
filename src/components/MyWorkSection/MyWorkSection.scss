@@ -156,7 +156,8 @@
 
       &-dos {
         object-fit: contain;
-        height: 18rem;
+        height: 15rem;
+        flex-shrink:1;
         background-color: $primary-portfolio-AquaMint;
         border-radius: 0.5rem;
 
