@@ -78,7 +78,7 @@ function Header() {
         <div className="header__resume">
           <Button
             text="Resume"
-            path="https://drive.google.com/file/d/1stdvPrMEzALkx_U8Cn_mDSo2NS-pEWZV/view?usp=drive_link"
+            path="https://drive.google.com/file/d/1MKnLeDDDhj7014iAqheZBiiAsbdYhVRx/view?usp=sharing"
             isExternal={true}
             onClick={() => setIsMenuOpen(false)}
           />
